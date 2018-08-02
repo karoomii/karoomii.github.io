@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Fleur de L'esprit</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/waypoints.debug.js"></script>
+	<script>
+		 $(function () {
+			 $('.content-section').load('portfolio-copy.html');
+			 
+			$('#home-btn, #menu-logo').click(function(){
+				  setTimeout(function(){
+				 $(".content-section").load("opening.html")  
+			   }, 1000);
+			}); 
+			 
+           $('#about-btn').click(function(){
+			   setTimeout(function(){
+				 $(".content-section").load("about.html")  
+			   }, 1000);
+		   });
+			 
+			 $('#portfolio-btn').click(function(){
+				  setTimeout(function(){
+				 $(".content-section").load("portfolio-copy.html")  
+			   }, 1000);
+			}); 
+			   
+			 $('#contact-btn, .hire').click(function(){
+				 setTimeout(function(){
+				 $(".content-section").load("contact.html")  
+			   }, 1000);
+			}); 
+			 
+			 $('.menu-section ol li, .button, #menu-logo').click(function(){
+				$('.desc-box, .contact-form').removeClass('fadeInUp');
+				$('.img-overlay').removeClass('shrink-img');
+				$('.half-section-overlay').addClass('overlay-open');
+			});
+			 
+        });
+		
+	</script>
+	
+	
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="img/logo_final_Ctl_icon.ico">
+</head>
+
+<body>
+	
+	<!--MENU-->
+	<div id="wrapper">
+		<div class="menu-section">
+			<img id="menu-logo" src="img/logo-test.png">
+			<ol>
+				<li id="home-btn">Home</li>
+				<li id="about-btn">About</li>
+				<li id="portfolio-btn">Portfolio</li>
+				<li id="contact-btn">Contact</li>
+			</ol>
+			<div class="button hire">
+				<h2>GET IN TOUCH</h2>
+			</div>
+			<div id="close-btn">
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</div>
+		<div class="content-section"></div>
+		<div class="half-section">
+			<img id="footer-logo" src="img/logo-final.png">
+			<div id="footer-info">
+			<h1>kareem.sabri23@gmail.com<br><br>703.789.4657<br><br>22579 Forest Run Drive<br>Ashburn, VA 20148</h1>
+			</div>
+			<div class="half-section-overlay"></div>
+		</div>
+	</div>
+	
+</body>
+</html>

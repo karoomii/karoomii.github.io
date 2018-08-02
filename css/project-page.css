@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*DEFAULTS*/
+.section {
+	height: auto;
+	display: inline-block;
+}
+.section img {
+	width: 89.75%;
+	position: relative;
+	margin-bottom: 50pt;
+}
+
+
+
+
+/*COMPUTER SCREEN QUERIES BELOW!!!!*/
+
+/*1024*/
+@media only screen and (min-width: 1024px) {
+	
+}
+/*1024*/
+
+/*1280*/
+@media only screen and (min-width: 1280px) {
+	
+}
+/*1280*/
+
+/*1366*/
+@media only screen and (min-width: 1366px) {
+	
+}
+/*1366*/
+
+/*1600*/
+@media only screen and (min-width: 1600px) {
+	
+}
+/*1600*/
+
+
+/*1920*/
+@media only screen and (min-width: 1900px) {
+	
+}
+/*1920*/
+
+
+
+
+
+
+
+/*RATIO*/
