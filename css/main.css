@@ -139,11 +139,11 @@ body {
 	transform-origin: center;
 	position: absolute;
 	top: 50%;
+	margin-left: 7%
 }
 .menu-section li {
 	font-family: 'acumin-cond-black';
 	display: inline-block;
-	margin-left: 20pt;
 	cursor: pointer;
 	transition: opacity 0.5s ease;
 }
@@ -224,7 +224,7 @@ body {
 @media only screen and (min-width: 1024px) {
 	.menu-section ol li {
 		font-size: 8pt;
-		margin-left: 10pt;
+		margin-left: 20pt;
 	}
 	.half-section {
 		height: 150px;
@@ -245,7 +245,7 @@ body {
 @media only screen and (min-width: 1280px) {
 	.menu-section ol li {
 		font-size: 9pt;
-		margin-left: 12pt;
+		margin-left: 22pt;
 	}
 	.half-section {
 		height: 180px;
@@ -266,7 +266,7 @@ body {
 @media only screen and (min-width: 1366px) {
 	.menu-section ol li {
 		font-size: 10pt;
-		margin-left: 12pt;
+		margin-left: 24pt;
 	}
 	.half-section {
 		height: 174px;
@@ -287,7 +287,7 @@ body {
 @media only screen and (min-width: 1600px) {
 	.menu-section ol li {
 		font-size: 11pt;
-		margin-left: 13pt;
+		margin-left: 26pt;
 	}
 	.half-section {
 		height: 225px;
@@ -309,7 +309,7 @@ body {
 @media only screen and (min-width: 1900px) {
 	.menu-section ol li {
 		font-size: 12pt;
-		margin-left: 14pt;
+		margin-left: 28pt;
 	}
 	.half-section {
 		height: 250px;

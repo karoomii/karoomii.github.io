@@ -8,7 +8,7 @@
 	<script src="js/waypoints.debug.js"></script>
 	<script>
 		 $(function () {
-			 $('.content-section').load('portfolio-copy.html');
+			 $('.content-section').load('opening.html');
 			 
 			$('#home-btn, #menu-logo').click(function(){
 				  setTimeout(function(){
@@ -29,12 +29,10 @@
 			}); 
 			   
 			 $('#contact-btn, .hire').click(function(){
-				 setTimeout(function(){
-				 $(".content-section").load("contact.html")  
-			   }, 1000);
+				javascript:window.location.href='mailto:kareem.sabri23@gmail.com';
 			}); 
 			 
-			 $('.menu-section ol li, .button, #menu-logo').click(function(){
+			 $('.menu-section ol li, .desc-box .button, #menu-logo').click(function(){
 				$('.desc-box, .contact-form').removeClass('fadeInUp');
 				$('.img-overlay').removeClass('shrink-img');
 				$('.half-section-overlay').addClass('overlay-open');
@@ -59,7 +57,7 @@
 				<li id="home-btn">Home</li>
 				<li id="about-btn">About</li>
 				<li id="portfolio-btn">Portfolio</li>
-				<li id="contact-btn">Contact</li>
+<!--				<li id="contact-btn">Contact</li>-->
 			</ol>
 			<div class="button hire">
 				<h2>GET IN TOUCH</h2>

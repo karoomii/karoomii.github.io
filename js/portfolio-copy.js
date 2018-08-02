@@ -24,7 +24,7 @@ $(function(){
 		'transform':'translateY(-50%)',
 		'opacity':0.2
 	});
-	$('.menu-section ol li, .button, #menu-logo').click(function(){
+	$('.menu-section ol li, .desc-box .button, #menu-logo').click(function(){
 		$('.project-wrap').css({
 		'transform':'translateY(-30%)',
 		'opacity':0
