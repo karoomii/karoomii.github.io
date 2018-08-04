@@ -24,17 +24,7 @@
 
 $(function(){
 	$('.footer-overlay').removeClass('overlay-open');
-//	$('.project-wrap').css({
-//		'transform':'translateY(-50%)',
-//		'opacity':0.2
-//	});
 	$('.project-wrap').addClass('fadeInUp');
-//	$('.menu-section ol li, .desc-box .button, #menu-logo').click(function(){
-//		$('.project-wrap').css({
-//		'transform':'translateY(-30%)',
-//		'opacity':0
-//		});
-//});
 });
 
 
@@ -42,10 +32,39 @@ $(function(){
 
 /*FREEZING FRAME TESTING AREA*/
 $(function(){
-	$('.section:nth-child(2) .button').click(function(){
-		 setTimeout(function(){
-				 $(".content-section").load("bona.html")  
-			   }, 1000);
+	$('.desc-box .button').click(function(){
+		$('.project-wrap').removeClass('fadeInUp');
+		$('.footer-overlay').addClass('overlay-open');
 		$('.menu-section ol li').css('opacity',0);
+		setTimeout(function(){
+			 $(".menu-section ol li").css('display','none');  
+		  }, 1000);
 	});
+	
+	$('.section:nth-child(1) .button').click(function(){
+	setTimeout(function(){
+				 $(".content-section").load("bona.html");  
+			   }, 1000);
+	});
+	$('.section:nth-child(2) .button').click(function(){
+	setTimeout(function(){
+				 $(".content-section").load("sweeterman.html");  
+			   }, 1000);
+	});
+	$('.section:nth-child(3) .button').click(function(){
+	setTimeout(function(){
+				 $(".content-section").load("peak.html");  
+			   }, 1000);
+	});
+	$('.section:nth-child(4) .button').click(function(){
+	setTimeout(function(){
+				 $(".content-section").load("trap.html");  
+			   }, 1000);
+	});
+	$('.section:nth-child(5) .button').click(function(){
+	setTimeout(function(){
+				 $(".content-section").load("fp.html");  
+			   }, 1000);
+	});
+	
 });

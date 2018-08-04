@@ -413,6 +413,39 @@ body {
 }
 
 
+/*PROJECT PAGES*/
+
+.project-section {
+	width: 89.75%;
+	display: inline-block;
+	height: auto;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+.project-section h1 {
+	text-align: center;
+	font-family: 'acumin-cond-black';
+	margin: 0; padding: 0;
+	margin-top: 50pt; margin-bottom: 50pt;
+}
+.project-section img {
+	position: relative;
+	margin-bottom: 150pt;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.larger-img {
+	width: 100%;
+}
+.smaller-img {
+	width: 20%;
+}
+video {
+	width: 100%;
+	margin-bottom: 150pt;
+}
+
+/*END PROJECT PAGES*/
 
 /*565 - 736 SIDEWAYS PHONES*/
 @media only screen and (min-width: 565px) and (max-width: 736px) {
@@ -776,9 +809,11 @@ body {
 	.menu-section ol {
 		transform: rotate(0) translate(-50%, 0);
 		left: 50%;
-		top: 65%;
+		top: auto;
+		bottom: 0;
 		width: 100%;
 		text-align: center;
+		margin-bottom: 3%;
 	}
 	.menu-section .button {
 		display: none;
@@ -891,6 +926,22 @@ body {
 		float: left!important;
 		margin: 0!important;
 		width: 100%!important;
+	}
+	
+	.project-section img {
+		margin-bottom: 50pt;
+	}
+	.project-section video {
+		margin-bottom: 50pt;
+	}
+	#close-btn {
+		width: 20px;
+		height: 20px;
+		bottom: 0;
+		top: auto;
+		transform: translate(0);
+		margin: auto;
+		margin-bottom: 2%;
 	}
 	
 }
