@@ -1,16 +1,14 @@
 $(function(){
-	$('.button').click(function(){
-		$('.desc-box').removeClass('fadeInUp');
-		$('.img-overlay').removeClass('shrink-img');
-		$('.half-section-overlay').addClass('overlay-open');
-	});
 	$('.desc-box .button').click(function(){
+		$('.desc-box, .contact-form').removeClass('fadeInUp');
+		$('.img-overlay').removeClass('shrink-img');
+		$('.footer-overlay').addClass('overlay-open');
 		setTimeout(function(){
 			$('.content-section').load('about.html');
 		}, 1000);
 	});
 	
-	$('.half-section-overlay').removeClass('overlay-open');
+	$('.footer-overlay').removeClass('overlay-open');
 });
 
 $(document).ready(function(){

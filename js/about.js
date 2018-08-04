@@ -19,4 +19,4 @@ $desc.waypoint(function (direction) {
 }, { offset: '100%'});
 });
 
-$('.half-section-overlay').removeClass('overlay-open');
+$('.footer-overlay').removeClass('overlay-open');
