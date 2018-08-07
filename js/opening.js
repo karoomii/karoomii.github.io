@@ -32,3 +32,26 @@ $(document).ready(function(){
 	}
 }, { offset: '100%'});
 });
+
+/*sprite animation*/
+
+$(document).ready(function(){
+	setTimeout(function(){
+		$('#logo-sprite').addClass('sprite-animation');
+	},500);
+});
+			
+ $('#logo-sprite').waypoint(function (direction) {
+			if (direction == 'down') {
+				$('#logo-sprite').addClass('sprite-animation');
+			} else {
+				$('#logo-sprite').removeClass('sprite-animation');
+			}
+			 	}, { offset: '100%'});
+$('#logo-sprite').waypoint(function (direction) {
+			if (direction == 'up') {
+				$('#logo-sprite').addClass('sprite-animation');
+			} else {
+				$('#logo-sprite').removeClass('sprite-animation');
+			}
+			 	}, { offset: '-70%'});

@@ -285,6 +285,20 @@ body {
 	left: 0;right: 0;top: 0; bottom: 0;
 	margin: auto;
 }
+#logo-sprite {
+	position: absolute;
+	left: 0; right: 0; top: 0; bottom: 0;
+	margin: auto;
+	background-image: url(../img/sprite-full.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.sprite-animation {
+	animation: draw-sprite 1.5s steps(41) forwards; 
+}
+.sprite-animation-reverse {
+	animation: draw-sprite-reverse 1s steps(41) forwards;
+}
 #img-me {
 	position: absolute;
 	right: 0;
@@ -524,7 +538,37 @@ video {
 		margin: 0!important;
 	}
 }
+/*SPRITE SPECIFIC MEDIA QUERIES*/
+@media only screen and (max-height: 700px) {
+	#logo-sprite {
+		height: 472px;
+		width: 354px;
+	}
+	@keyframes draw-sprite {
+		from { background-position: 0px 0px }
+		to { background-position: 0px -19352px }
+	}
+	@keyframes draw-sprite-reverse {
+		from { background-position: 0px -19352px }
+		to { background-position: 0px 0px }
+	}
+}
 
+@media only screen and (max-height: 812px) {
+	#logo-sprite {
+		height: 380px;
+		width: 285px;
+	}
+	@keyframes draw-sprite {
+		from { background-position: 0px 0px }
+		to { background-position: 0px -15580px }
+	}
+	@keyframes draw-sprite-reverse {
+		from { background-position: 0px -15580px }
+		to { background-position: 0px 0px }
+	}
+}
+/*END SPRITE SPECIFIC MEDIA QUERIES*/
 /*737*/
 @media only screen and (min-width: 737px) {
 	.section {
@@ -563,6 +607,18 @@ video {
 
 /*1024*/
 @media only screen and (min-width: 1024px) {
+	#logo-sprite {
+		height: 384px;
+		width: 288px;
+	}
+	@keyframes draw-sprite {
+		from { background-position: 0px 0px }
+		to { background-position: 0px -15744px }
+	}
+	@keyframes draw-sprite-reverse {
+		from { background-position: 0px -15744px }
+		to { background-position: 0px 0px }
+	}
 	.menu-section ol li {
 		font-size: 12pt;
 	}
@@ -616,6 +672,18 @@ video {
 
 /*1280*/
 @media only screen and (min-width: 1280px) {
+	#logo-sprite {
+		height: 460px;
+		width: 345px;
+	}
+	@keyframes draw-sprite {
+		from { background-position: 0px 0px }
+		to { background-position: 0px -18860px }
+	}
+	@keyframes draw-sprite-reverse {
+		from { background-position: 0px -18860px }
+		to { background-position: 0px 0px }
+	}
 	.footer {
 		height: 180px;
 	}
@@ -660,6 +728,18 @@ video {
 
 /*1366*/
 @media only screen and (min-width: 1366px) {
+	#logo-sprite {
+		height: 484px;
+		width: 363px;
+	}
+	@keyframes draw-sprite {
+		from { background-position: 0px 0px }
+		to { background-position: 0px -19844px }
+	}
+	@keyframes draw-sprite-reverse {
+		from { background-position: 0px -19844px }
+		to { background-position: 0px 0px }
+	}
 	.footer {
 		height: 174px;
 	}
@@ -704,6 +784,18 @@ video {
 
 /*1600*/
 @media only screen and (min-width: 1600px) {
+	#logo-sprite {
+		height: 576px;
+		width: 432px;
+	}
+	@keyframes draw-sprite {
+		from { background-position: 0px 0px }
+		to { background-position: 0px -23616px }
+	}
+	@keyframes draw-sprite-reverse {
+		from { background-position: 0px -23616px }
+		to { background-position: 0px 0px }
+	}
 	.footer {
 		height: 225px;
 	}
@@ -749,6 +841,18 @@ video {
 
 /*1920*/
 @media only screen and (min-width: 1900px) {
+	#logo-sprite {
+		height: 540px;
+		width: 405px;
+	}
+	@keyframes draw-sprite {
+		from { background-position: 0px 0px }
+		to { background-position: 0px -22140px }
+	}
+	@keyframes draw-sprite-reverse {
+		from { background-position: 0px -22140px }
+		to { background-position: 0px 0px }
+	}
 	.footer {
 		height: 250px;
 	}
