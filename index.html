@@ -76,6 +76,9 @@
 				$('.footer-overlay').addClass('overlay-open');
 				$('#logo-sprite').removeClass('sprite-animation');
 				$('#logo-sprite').addClass('sprite-animation-reverse');
+				setTimeout(function(){
+					window.scrollTo(0,0);
+				}, 1000);
 			});
 	
         });

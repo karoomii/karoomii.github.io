@@ -25,6 +25,9 @@ $(function(){
 		setTimeout(function(){
 			 $(".menu-section ol li").css('opacity',1);  
 		  }, 1000);
+		setTimeout(function(){
+					window.scrollTo(0,0);
+				}, 1000);
 	});
 	
 	

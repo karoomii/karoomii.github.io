@@ -39,6 +39,9 @@ $(function(){
 		setTimeout(function(){
 			 $(".menu-section ol li").css('display','none');  
 		  }, 1000);
+		setTimeout(function(){
+					window.scrollTo(0,0);
+				}, 1000);
 	});
 	
 	$('.section:nth-child(1) .button').click(function(){

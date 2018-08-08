@@ -176,6 +176,10 @@ body {
 	transform: translateY(-50%);
 	font-weight: 100;
 }
+a {
+	color: inherit;
+	text-decoration: none;
+}
 .button:hover {
 	color: white;
 	transition: 0.4s ease;
@@ -263,7 +267,7 @@ body {
 }
 .about-desc {
 	right: 0;
-	margin-right: 50%;
+	margin-right: 55%;
 }
 .services-desc {
 	left: 0;
@@ -294,7 +298,8 @@ body {
 	background-repeat: no-repeat;
 }
 .sprite-animation {
-	animation: draw-sprite 1.5s steps(41) forwards; 
+	animation: draw-sprite 1.5s steps(41) forwards;
+	animation-delay: 0.5s;
 }
 .sprite-animation-reverse {
 	animation: draw-sprite-reverse 1s steps(41) forwards;
@@ -302,31 +307,31 @@ body {
 #img-me {
 	position: absolute;
 	right: 0;
+	width: 35%;
+	top: 0; bottom: 0;
+	margin: auto;
 	margin-right: 10.25%;
-	width: 30%;
-	top: 23%;
 }
 #img-services {
 	position: absolute;
 	left: 0;
-	width: 30%;
+	width: 35%;
 	top: 0; bottom: 0;
 	margin: auto;
-	margin-left: 10.25%;
 }
 
 #img-me-overlay {
 	right: 0;
+	width: 35%;
+	top: 0; bottom: 0;
+	margin: auto;
 	margin-right: 10.25%;
-	width: 30%;
-	top: 23%;
 }
 #img-services-overlay {
 	left: 0;
-	width: 30%;
+	width: 35%;
 	top: 0; bottom: 0;
 	margin: auto;
-	margin-left: 10.25%;
 }
 #img-paris-view {
 	width: 40%;
@@ -554,7 +559,7 @@ video {
 	}
 }
 
-@media only screen and (max-height: 812px) {
+@media only screen and (min-height: 812px) {
 	#logo-sprite {
 		height: 380px;
 		width: 285px;
@@ -608,15 +613,15 @@ video {
 /*1024*/
 @media only screen and (min-width: 1024px) {
 	#logo-sprite {
-		height: 384px;
-		width: 288px;
+		height: 300px;
+		width: 225px;
 	}
 	@keyframes draw-sprite {
 		from { background-position: 0px 0px }
-		to { background-position: 0px -15744px }
+		to { background-position: 0px -12300px }
 	}
 	@keyframes draw-sprite-reverse {
-		from { background-position: 0px -15744px }
+		from { background-position: 0px -12300px }
 		to { background-position: 0px 0px }
 	}
 	.menu-section ol li {
@@ -673,15 +678,15 @@ video {
 /*1280*/
 @media only screen and (min-width: 1280px) {
 	#logo-sprite {
-		height: 460px;
-		width: 345px;
+		height: 360px;
+		width: 270px;
 	}
 	@keyframes draw-sprite {
 		from { background-position: 0px 0px }
-		to { background-position: 0px -18860px }
+		to { background-position: 0px -14760px }
 	}
 	@keyframes draw-sprite-reverse {
-		from { background-position: 0px -18860px }
+		from { background-position: 0px -14760px }
 		to { background-position: 0px 0px }
 	}
 	.footer {
@@ -729,15 +734,15 @@ video {
 /*1366*/
 @media only screen and (min-width: 1366px) {
 	#logo-sprite {
-		height: 484px;
-		width: 363px;
+		height: 384px;
+		width: 288px;
 	}
 	@keyframes draw-sprite {
 		from { background-position: 0px 0px }
-		to { background-position: 0px -19844px }
+		to { background-position: 0px -15744px }
 	}
 	@keyframes draw-sprite-reverse {
-		from { background-position: 0px -19844px }
+		from { background-position: 0px -15744px }
 		to { background-position: 0px 0px }
 	}
 	.footer {
@@ -785,15 +790,15 @@ video {
 /*1600*/
 @media only screen and (min-width: 1600px) {
 	#logo-sprite {
-		height: 576px;
-		width: 432px;
+		height: 452px;
+		width: 339px;
 	}
 	@keyframes draw-sprite {
 		from { background-position: 0px 0px }
-		to { background-position: 0px -23616px }
+		to { background-position: 0px -18532px }
 	}
 	@keyframes draw-sprite-reverse {
-		from { background-position: 0px -23616px }
+		from { background-position: 0px -18532px }
 		to { background-position: 0px 0px }
 	}
 	.footer {

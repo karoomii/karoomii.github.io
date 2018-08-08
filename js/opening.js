@@ -54,4 +54,4 @@ $('#logo-sprite').waypoint(function (direction) {
 			} else {
 				$('#logo-sprite').removeClass('sprite-animation');
 			}
-			 	}, { offset: '-70%'});
+			 	}, { offset: '-75%'});
