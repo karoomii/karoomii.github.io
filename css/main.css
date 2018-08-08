@@ -546,20 +546,20 @@ video {
 /*SPRITE SPECIFIC MEDIA QUERIES*/
 @media only screen and (max-height: 700px) {
 	#logo-sprite {
-		height: 472px;
-		width: 354px;
+		height: 352px;
+		width: 264px;
 	}
 	@keyframes draw-sprite {
 		from { background-position: 0px 0px }
-		to { background-position: 0px -19352px }
+		to { background-position: 0px -14432px }
 	}
 	@keyframes draw-sprite-reverse {
-		from { background-position: 0px -19352px }
+		from { background-position: 0px -14432px }
 		to { background-position: 0px 0px }
 	}
 }
 
-@media only screen and (min-height: 812px) {
+@media only screen and (min-height: 701px) {
 	#logo-sprite {
 		height: 380px;
 		width: 285px;
@@ -949,7 +949,7 @@ video {
 		padding-bottom: 20%;
 	}
 	.full {
-		height: 100vh;
+		height: 75vh;
 		transform: translateX(0);
 	}
 	.footer {
