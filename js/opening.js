@@ -1,11 +1,14 @@
 $(function(){
 	$('.desc-box .button').click(function(){
-		$('.desc-box, .contact-form').removeClass('fadeInUp');
+		$('.desc-box').removeClass('fadeInUp');
 		$('.img-overlay').removeClass('shrink-img');
 		$('.footer-overlay').addClass('overlay-open');
 		setTimeout(function(){
 			$('.content-section').load('about.html');
 		}, 1000);
+		setTimeout(function(){
+					window.scrollTo(0,0);
+				}, 1000);
 	});
 	
 	$('.footer-overlay').removeClass('overlay-open');

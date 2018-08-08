@@ -32,7 +32,7 @@ $(function(){
 
 /*FREEZING FRAME TESTING AREA*/
 $(function(){
-	$('.desc-box .button').click(function(){
+	$('.desc-box .button:not(#null)').click(function(){
 		$('.project-wrap').removeClass('fadeInUp');
 		$('.footer-overlay').addClass('overlay-open');
 		$('.menu-section ol li').css('opacity',0);
@@ -43,17 +43,18 @@ $(function(){
 					window.scrollTo(0,0);
 				}, 1000);
 	});
+//	$('.button:not(#null)').click();
 	
 	$('.section:nth-child(1) .button').click(function(){
 	setTimeout(function(){
 				 $(".content-section").load("bona.html");  
 			   }, 1000);
 	});
-	$('.section:nth-child(2) .button').click(function(){
-	setTimeout(function(){
-				 $(".content-section").load("sweeterman.html");  
-			   }, 1000);
-	});
+//	$('.section:nth-child(2) .button').click(function(){
+//	setTimeout(function(){
+//				 $(".content-section").load("sweeterman.html");  
+//			   }, 1000);
+//	});
 	$('.section:nth-child(3) .button').click(function(){
 	setTimeout(function(){
 				 $(".content-section").load("peak.html");  
