@@ -298,7 +298,7 @@ a {
 	background-repeat: no-repeat;
 }
 .sprite-animation {
-	animation: draw-sprite 1.5s steps(41) forwards;
+	animation: draw-sprite 1s steps(41) forwards;
 	animation-delay: 0.5s;
 }
 .sprite-animation-reverse {
